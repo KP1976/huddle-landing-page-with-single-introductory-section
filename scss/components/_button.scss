@@ -1,0 +1,22 @@
+.button {
+  display: inline-block; // Allow setting width/padding
+  background-color: $color-white;
+  color: $color-primary-violet;
+  font-family: $font-family-headings; // Or body, check design
+  font-weight: $font-weight-regular; // Or semibold, check design
+  text-align: center;
+  padding: 0.8em 4em; // Adjust padding based on design
+  border: none;
+  border-radius: 50px; // Make it pill-shaped
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Add subtle shadow
+
+  &:hover,
+  &:focus {
+    // Include focus for accessibility
+    background-color: $color-primary-soft-magenta;
+    color: $color-white;
+    outline: none; // Remove default focus outline if custom styles are sufficient
+  }
+}

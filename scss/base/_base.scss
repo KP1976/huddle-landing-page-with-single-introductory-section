@@ -1,0 +1,29 @@
+body {
+  background-color: $color-primary-violet;
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain; // Or cover, depending on desired effect
+  background-position: top center;
+  min-height: 100vh; // Ensure body takes full viewport height
+
+  // Apply desktop background for larger screens
+  @media (min-width: $breakpoint-desktop) {
+    background-image: url("../images/bg-desktop.svg");
+    background-size: cover; // Adjust as needed for desktop
+  }
+}
+
+.page-wrapper {
+  // Optional: Add padding or max-width if needed for overall layout constraints
+  // max-width: 1440px; // Example max-width
+  // margin: 0 auto; // Center the wrapper if max-width is set
+  min-height: 100vh; // Ensure wrapper also takes full height
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; // Prevent horizontal scrollbars
+}
+
+// Ensure main content grows to fill available space
+.main-content {
+  flex-grow: 1;
+}

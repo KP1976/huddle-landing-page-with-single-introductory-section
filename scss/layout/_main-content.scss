@@ -1,0 +1,68 @@
+.main-content {
+  padding: 3rem 2.5rem; // Padding for mobile
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 1rem 5rem 3rem; // Adjust padding for desktop layout
+    display: flex; // Use flexbox for side-by-side layout on desktop
+    align-items: center; // Vertically align items
+    gap: 4rem; // Space between illustration and text content
+  }
+}
+
+// Styles specific to the hero section within main-content
+.hero {
+  text-align: center; // Center text on mobile
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex; // Already handled by main-content flex
+    align-items: center;
+    gap: 4rem;
+    text-align: left; // Align text left on desktop
+  }
+
+  &__illustration {
+    margin-bottom: 3.5rem; // Space below illustration on mobile
+
+    @media (min-width: $breakpoint-desktop) {
+      flex: 1 1 55%; // Illustration takes more space
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    @media (min-width: $breakpoint-desktop) {
+      flex: 1 1 45%; // Text content takes less space
+    }
+  }
+
+  &__heading {
+    font-size: 1.5rem; // Mobile heading size
+    font-weight: $font-weight-semibold;
+    margin-bottom: 1rem;
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 2.5rem; // Larger heading on desktop
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+
+    @media (min-width: $breakpoint-desktop) {
+      font-size: 1.125rem; // Slightly larger text on desktop
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__button {
+    // Button styles are mostly handled by .button component
+    // Add specific margin or width adjustments if needed
+    padding: 0.8em 5em; // Adjust padding specifically for this button if needed
+
+    @media (min-width: $breakpoint-desktop) {
+      padding: 1em 4em; // Adjust padding for desktop
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  // Container for the logo image
+  // Add specific styles if needed, e.g., margin
+
+  &__image {
+    // Style the image itself
+    // Adjust width/height as needed, especially for responsiveness
+    width: 150px; // Example width, adjust based on design
+
+    @media (min-width: $breakpoint-desktop) {
+      width: 200px; // Larger logo on desktop
+    }
+  }
+}

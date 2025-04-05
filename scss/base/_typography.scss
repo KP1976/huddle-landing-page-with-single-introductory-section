@@ -1,0 +1,24 @@
+body {
+  font-family: $font-family-body;
+  font-weight: $font-weight-regular;
+  font-size: 1rem; // Default font size (can be adjusted)
+  line-height: 1.6;
+  color: $color-white; // Assuming default text color is white based on design
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+  font-weight: $font-weight-semibold; // Default heading weight
+  line-height: 1.2;
+  margin-bottom: 1rem; // Basic spacing
+}
+
+a {
+  color: inherit; // Inherit color from parent by default
+  text-decoration: none; // Remove underline by default
+}

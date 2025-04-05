@@ -1,0 +1,7 @@
+.header {
+  padding: 2rem 2.5rem; // Padding around the logo
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 3rem 5rem; // More padding on desktop
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  padding: 2rem 2.5rem;
+  margin-top: auto; // Push footer to the bottom if content is short
+
+  .social-icons {
+    margin-bottom: 1.5rem; // Space between icons and attribution
+
+    @media (min-width: $breakpoint-desktop) {
+      justify-content: flex-end; // Align icons to the right on desktop
+      margin-bottom: 0; // Remove bottom margin as attribution might be elsewhere or handled differently
+    }
+  }
+
+  .attribution {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 1rem; // Space above attribution on mobile
+
+    a {
+      color: $color-primary-soft-magenta; // Style links in attribution
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      text-align: right; // Align attribution text right on desktop
+      margin-top: 0; // Remove top margin
+      // Position attribution relative to icons if needed
+    }
+  }
+
+  // Desktop layout adjustments for footer content
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: flex-end; // Align all footer content to the right
+    align-items: center; // Vertically align items
+    padding: 2rem 5rem; // Adjust padding
+    gap: 1rem; // Space between icons and attribution if needed
+  }
+}

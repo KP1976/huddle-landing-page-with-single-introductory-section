@@ -1,0 +1,20 @@
+// Colors
+// Primary
+$color-primary-violet: hsl(257, 40%, 49%);
+$color-primary-soft-magenta: hsl(300, 69%, 71%);
+
+// Neutral
+$color-white: hsl(0, 0%, 100%); // Assuming white for text/backgrounds
+
+// Typography
+// Font Families
+$font-family-headings: "Poppins", sans-serif;
+$font-family-body: "Open Sans", sans-serif;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+
+// Layout Breakpoints (from style-guide)
+$breakpoint-mobile: 375px;
+$breakpoint-desktop: 1440px;
